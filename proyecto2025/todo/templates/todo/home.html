@@ -10,8 +10,8 @@
             <tbody>
                 <tr>
                     <td>{{tarea}}</td>
-                    <td><button><a href="{% url 'eliminar' tarea.id %}">Eliminar</a></button></td>
-                    <td><button><a href="{% url 'editar' tarea.id %}">Editar</a></button></td>
+                    <td><button type="button" class="btn btn-outline-danger"><a href="{% url 'eliminar' tarea.id %}">Eliminar</a></button></td>
+                    <td><button type="button" class="btn btn-outline-warning"><a href="{% url 'editar' tarea.id %}">Editar</a></button></td>
                 </tr>
             </tbody>
             {% endfor %}
